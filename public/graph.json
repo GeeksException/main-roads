@@ -1,0 +1,72 @@
+{
+	"name":"Western Australia",
+	"population":10,
+	"children" : [
+		{
+			"name":"Queensland",
+			"population":7,
+			"children" : null,
+			"_children" : [
+				{
+					"name":"child 1",
+					"population":8,
+					"children" : null
+				},
+				{
+					"name":"child 2",
+					"population":9,
+					"children" : null
+				},
+				{
+					"name":"child 3",
+					"population":6,
+					"children" : null
+				}
+			]
+		}, {
+			"name":"South Australia",
+			"population":5,
+			"children" : null,
+			"_children" : [
+				{
+					"name":"child 4",
+					"population":9,
+					"children" : null
+				}
+			]
+		}, {
+			"name":"New South Wales",
+			"population":8,
+			"children" : null,
+			"_children" : [
+				{
+					"name":"child 5",
+					"population":7,
+					"children" : null
+				}
+			]
+		}, {
+			"name":"Victoria",
+			"population":6,
+			"children" : null,
+			"_children" : [
+				{
+					"name":"child 6",
+					"population":8,
+					"children" : null
+				}
+			]
+		}, {
+			"name":"Northern Territory",
+			"population":4,
+			"children" : null,
+			"_children" : [
+				{
+					"name":"child 7",
+					"population":6,
+					"children" : null
+				}
+			]
+		}
+	]
+}
