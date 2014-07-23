@@ -1,0 +1,111 @@
+body{
+	background-color: #FFF;	
+}
+
+#selectionDiv {
+	background-color: #9999CC;		
+	width: 15%;
+	float: right;
+	margin: 2% 0 0 2%;
+	padding: 1% 1%;  
+	font-family: Arial, 'Lucida Sans Unicode';
+	text-align: center;
+}
+
+#mainContent {
+    width: 600px;
+    height: 600px;
+    position: relative;
+    margin-left: auto;
+	margin-right: auto; 
+}
+
+#bgDiv,#mapDiv {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#mapDiv {
+    z-index: 10;
+}
+
+#bgDiv img{
+	width: 100%;	
+	height: auto;
+}
+
+.node {
+	fill: #9999CC;
+  	stroke: #FFFFFF;
+  	stroke-width: 1px;
+  	cursor: pointer;
+}
+
+.nodeCurrent {
+	fill: #32127a;
+  	stroke: #FFFFFF;
+  	stroke-width: 2px;
+  	cursor: pointer;
+}
+
+
+//Directed Sample
+svg {
+  background-color: #FFF;
+  cursor: default;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+svg:not(.active):not(.ctrl) {
+  //cursor: crosshair;
+}
+
+path.link {
+  fill: none;
+  stroke: #000;
+  stroke-width: 2px;
+  cursor: default;
+}
+
+svg:not(.active):not(.ctrl) path.link {
+  cursor: pointer;
+}
+
+path.link.selected {
+  stroke-dasharray: 10,2;
+}
+
+path.link.dragline {
+  pointer-events: none;
+}
+
+path.link.hidden {
+  stroke-width: 0;
+}
+
+circle.node {
+  stroke-width: 1.5px;
+  cursor: pointer;
+}
+
+circle.node.reflexive {
+  stroke: #000 !important;
+  stroke-width: 2.5px;
+}
+
+text {
+  font: 10px sans-serif;  
+}
+
+text.id {
+  text-anchor: middle;
+  font-weight: bold;
+}
+

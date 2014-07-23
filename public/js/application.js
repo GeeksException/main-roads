@@ -1,7 +1,7 @@
 var width = 960,
     height = 500
 
-var svg = d3.select("div.container").append("svg")
+var svg = d3.select("div#firstPrototype").append("svg")
     .attr("width", width)
     .attr("height", height);
 

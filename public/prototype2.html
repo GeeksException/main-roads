@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="stocksExceptionApp">
+<head>
+	<meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	
+	<title>Main roads by GeeksException</title>
+	
+	<link href="css/bootstrap.min.css" rel="stylesheet" />
+	<link href="css/bootstrap-responsive.min.css" rel="stylesheet" />
+	<link href="css/style2.css" rel="stylesheet" />
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    
+    <div id="secondPrototype" class="container">
+        <ul class="nav nav-pills">
+            <li><a href="/"><span class="badge pull-right">1</span> Prototype</a></li>
+            <li class="active"><a href="prototype2.html"><span class="badge pull-right">2</span> Prototype</a></li>
+        </ul>
+        
+        <div id="selectionDiv">
+            <span id="selectedArea">&nbsp;</span>
+        </div>
+        <div id="mainContent">
+            <div id="bgDiv">
+                <img src="svg/map-australia.svg"/>
+            </div>
+		  <div id="mapDiv"></div>
+        </div>
+        
+        <div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">Connecting the nodes</h3>
+			</div>
+			<div class="panel-body">
+				<span>The idea in this prototype is to show all cities/towns initially. A user can click on a node to see the relevant information in that place. A user can also connect one node to another to specify the path travelled by holding on the CTRL or COMMAND key and dragging from one node to another. Relevant data can be retrieved upon user interactions. As with prototype 1, the prototype 2 can also be used to record the straight line diagram.</span>
+			</div>
+		</div>
+    </div>
+    
+    <div class="container">
+		<footer>
+			<p class="pull-right"><a href="#">Back to top</a></p>
+			<p>&copy; 2014 GeeksException</p>
+		</footer>
+	</div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/d3.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+    <script src="js/map-main.js" type="text/javascript"></script>
+</body>
+</html>
